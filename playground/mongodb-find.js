@@ -24,12 +24,12 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true
   //   console.log('Unable to fetch todos', err);
   // });
 
-  db.collection('Users').find({ age: {$lte: 30} }).toArray().then((users) => {
-    console.log('Users');
-    console.log(JSON.stringify(users, undefined, 2));
-  }, (err) => {
-    console.log('Unable to fetch users', err);
-  });
+  // db.collection('Users').find({ age: {$lte: 30} }).toArray().then((users) => {
+  //   console.log('Users');
+  //   console.log(JSON.stringify(users, undefined, 2));
+  // }, (err) => {
+  //   console.log('Unable to fetch users', err);
+  // });
 
   // client.close();
 });
